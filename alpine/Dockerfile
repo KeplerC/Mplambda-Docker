@@ -40,7 +40,6 @@ RUN git clone https://github.com/eigenteam/eigen-git-mirror.git
 RUN cd eigen-git-mirror && mkdir build && cd build && \
     cmake .. &&\
     make install
-RUN apk add --no-cache eigen-dev
 
 #Libccd 
 WORKDIR /
